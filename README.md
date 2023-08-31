@@ -1,11 +1,14 @@
 # basic_example_selenium_maven
 1. install maven:
+
    sudo apt-get install maven
 
 2. create a new empty project:
+
 mvn archetype:generate -DgroupId=com.example -DartifactId=my-project -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 3. add selenium dependency to the pom.xml file:
+
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
@@ -13,7 +16,8 @@ mvn archetype:generate -DgroupId=com.example -DartifactId=my-project -Darchetype
     </dependency>
 
 4. add browsers from internet:
-    	<dependency>
+
+     <dependency>
        	    <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.0.3</version>
